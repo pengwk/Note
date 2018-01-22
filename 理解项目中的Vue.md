@@ -17,6 +17,8 @@
 
 ## 如何运行一个Vue？
 
+我想一边改一边看效果，这个环境怎么搭建?
+
 ## 如何安装Vue的Chrome调试插件？
 
 1. 官方应用商店安装
@@ -31,5 +33,24 @@
 
 `_.forIn`
 
+`-`是underscore对象。
+
+#### 文档
+
+- [官方网站](http://underscorejs.org/)
+- [中文文档（bootcss提供）](http://www.bootcss.com/p/underscore/)
+
 ## export default 是什么意思？
+
+## v-for 会生成什么？没有结束标志，怎么判断呢？
+
+## v-if
+
+## router-link
+
+## <template></template>
+
+## 触发重新渲染?
+
+
 
