@@ -2,6 +2,12 @@
 
 ## Vue怎么获取后台数据，通过
 
+## axios
+- https://www.axios.com/
+
+- this.$http.get('/api/device').then(function (res) {
+                this.devices = res.body;
+
 ## 如何更换Vue的后端？
 
 - 整理数据接口
