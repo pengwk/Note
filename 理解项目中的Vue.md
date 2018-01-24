@@ -12,6 +12,10 @@
 
 - 整理数据接口
 
+## Vue开发流程
+
+- 热加载 reload `cnpm run dev`
+
 ## 怎么从PHP迁移到Python？
 
 ## 什么是RestFul服务？
