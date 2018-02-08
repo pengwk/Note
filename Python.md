@@ -59,3 +59,13 @@ TCP里传输的是JSON字符串，Tornado接收到后解析出错，日志显示
 
 发送时间间隔很快时（1,2秒）出现，将时间调至5秒时，就没有问题了。
 
+**初步判断**
+
+网络质量差，传输数据过大，TCP分包传送，当一部分数据包抵达后就返回了。Tornado代码如下：
+
+```python
+        self.stream.read_bytes(num_bytes=TornadoTCPConnection.MAX_SIZE,
+                               callback=stack_context.wrap(self.on_message_receive), partial=True)
+```
+
+猜测与`partial`有关，这个参数设置为真会导致缓冲区有可用数据就会调用回调函数，导致数据没有接收完整。TCP是流，没有消息边界，后面传输的数据包就没有处理。
