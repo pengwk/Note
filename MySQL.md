@@ -20,7 +20,7 @@
 
 #### 备份全部（）
 
-`mysqldump -u root -p database_name > database_name_backip.sql`
+`mysqldump -u root -p database_name > database_name_backup.sql`
 
 ### 还原
 
