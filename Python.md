@@ -21,6 +21,24 @@
 
 使用Python Tornado做TCP服务器，Redis做消息队列，Nginx做Web Server，Supervisor运行整套服务，使用Vue构建SPA应用，PHP Lavarel做网站后端，使用MySQL做数据库。
 
+### 类型与数据结构
+
+这两个真的非常重要，Python是强类型、动态语言（strongly,dynamically typed language）,
+
+- 动态，运行时可以转换类型。
+- 强类型，变量本身有类型的区别。
+
+把返回的数据类型和数据的结构写的清楚明了真的很重要，修复bug的时候，问题就出现，很多时候不知道那里面有什么。变过来变过去就蒙了。
+
+> 动态类型一时爽，代码重构火葬场。不是没有道理（捂脸）。
+
+#### type 与 isinstance
+
+`type`与`isinstance`都能判别一个对象的类型，他们对子类的处理是不同的。
+
+- `type(object)` 返回继承链上最新的类型。
+- `isinstance(object, type_name)`继承链上任意一个类型都会返回`True`。
+
 #### Python代码
 
 **问题**
