@@ -26,7 +26,9 @@
 
 #### nslookup
 
-#### 
+#### ifup
+
+#### ifdown
 
 ### Wireshark
 
