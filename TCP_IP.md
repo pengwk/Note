@@ -10,6 +10,22 @@
 
 #### traceroute
 
+#### route 
+
+#### iptables
+
+#### ip rule 
+
+#### ifconfig
+
+#### tcpdump
+
+#### nmap
+
+#### netstat
+
+#### nslookup
+
 #### 
 
 ### Wireshark
@@ -38,7 +54,39 @@
 
 系统版本：CentOS Linux release 7.3.1611 (Core) 
 
-服务上有多个网卡，每个网卡都连接到内网，每个网卡都可以上网，现在想要通过一张网卡对公网提供Web服务，在配置完网卡后，用浏览器访问发现，**响应时间过长**。
+服务上有多个网卡，每个网卡都连接到内网，每个网卡都可以上网，现在想要通过一张网卡对公网提供Web服务，在配置完网卡后，用浏览器访问发现，**ERR_CONNECTION_TIMED_OUT**。
 
-#### 网络工具
+网卡设备目录：`/etc/sysconfig/device`
+
+网卡配置目录：``
+
+
+网卡配置：
+
+```
+TYPE=Ethernet
+BOOTPROTO=static
+DEFROUTE=yes
+PEERDNS=yes
+PEERROUTES=yes
+IPV4_FAILURE_FATAL=no
+IPV6INIT=yes
+IPV6_AUTOCONF=yes
+IPV6_DEFROUTE=yes
+IPV6_PEERDNS=yes
+IPV6_PEERROUTES=yes
+IPV6_FAILURE_FATAL=no
+IPV6_ADDR_GEN_MODE=stable-privacy
+NAME=em3
+UUID=cf985ac4-a7c3-41cd-ac92-cdf0a03b84c7
+DEVICE=em3
+ONBOOT=yes
+IPADDR="192.168.1.114"
+NETMASK="255.255.255.0"
+GATEWAY="192.168.1.114"
+DNS1="114.114.114.114"
+DNS2="8.8.8.8"
+```
+
+#### 网络工具检查
 
