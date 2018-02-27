@@ -13,7 +13,9 @@
 
 #### 1. 创建用户
 
-## 执行顺序
+## SQL语句执行顺序
+
+
 
 ## 
 
@@ -49,6 +51,8 @@ use database_name;
 
 source database_name_backup.sql
 ```
+
+`source`是执行SQL语句的命令。
 
 ## 可用字段
 
