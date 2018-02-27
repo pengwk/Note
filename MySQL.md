@@ -1,5 +1,21 @@
 # MySQL
 
+## 查看帮助
+
+非常重要，遇到不会或者不常用的命令可以查看帮助解决。
+
+`MariaDB [(none)]> ? grant;`
+
+
+## 优化
+
+## 主从备份、读写分离
+
+#### 1. 创建用户
+
+## 执行顺序
+
+## 
 
 ## 备份&还原
 
@@ -36,6 +52,8 @@ source database_name_backup.sql
 
 ## 可用字段
 
+通过帮助可以查看支持的所有数据类型。
+
 - int
 - char
 - varchar
@@ -51,11 +69,23 @@ source database_name_backup.sql
 
 使用UTF-8
 
+数据库连接URL设置字符集为UTF-8
+
+`mysql:root:password@localhost/database?charset=utf-8`
+
 ## 用户
 
 ### 创建用户
 
-### 授权用户
+### 授权用户 grant GRANT
+
+`grant all on db1.table1 to 'username'@'host' with max_queries_per_hour 10;`
+
+权限控制：
+
+- `all`
+- `select`
+- 
 
 
 ## 配置
