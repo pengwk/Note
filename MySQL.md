@@ -30,6 +30,12 @@ B+ Tree
 
 #### 临时表
 
+#### 范式
+
+1. 第一范式
+2. 第二范式
+3. 第三范式
+
 
 #### 日志
 
@@ -70,6 +76,27 @@ MariaDB [iot]> explain select * from device;
 ```
 
 #### show profiles
+
+**需要先开启这个功能**
+
+查看功能是否开启：
+
+```sql
+show variables like profiling;
+```
+
+```sql
+set profiling=1;
+show profiles;
+
+MariaDB [iot]> show profiles;
++----------+------------+----------------------+
+| Query_ID | Duration   | Query                |
++----------+------------+----------------------+
+|        1 | 0.00034674 | select * from device |
++----------+------------+----------------------+
+1 row in set (0.00 sec)
+```
 
 #### show status
 
