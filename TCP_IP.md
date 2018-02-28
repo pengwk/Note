@@ -1,6 +1,12 @@
 # 工作中的TCP/IP
 
 
+## 可靠性
+
+## 流量控制
+
+## 拥塞控制
+
 ## BUGs
 
 
@@ -33,6 +39,10 @@
 ### Wireshark
 
 检测发送、接收的所有数据。
+
+#### 过滤器
+
+tcp
 
 ### Network Emulator for Windows Toolkit
 
