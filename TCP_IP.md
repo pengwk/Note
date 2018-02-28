@@ -3,9 +3,15 @@
 
 ## 可靠性
 
+checksum 序号 自动重发
+
 ## 流量控制
 
+可用缓冲区大小
+
 ## 拥塞控制
+
+慢启动 快重传 快恢复
 
 ## BUGs
 
@@ -19,6 +25,10 @@
 #### route 
 
 #### iptables
+
+mangle chain filter nat 
+
+input output forward postrouting prerouting 
 
 #### ip rule 
 
