@@ -33,7 +33,7 @@ B+ Tree
 
 #### 日志
 
-预写日志，方便回滚。
+预写日志，方便回滚、备份。
 
 #### 笛卡尔乘积
 
@@ -71,6 +71,10 @@ MariaDB [iot]> explain select * from device;
 
 #### show profiles
 
+#### show status
+
+#### show variables
+
 
 #### 慢查询日志
 
@@ -86,7 +90,35 @@ MariaDB [iot]> explain select * from device;
 
 #### 读写分离
 
-在主（master）上写，同步到从（slave）上，并且配置应用程序只在从机上读数据。
+在主（master）上写，同步到从（slave）上，并且配置应用程序只在从机（slave）上读数据。
+
+#### 分区、分表
+
+当表中的数据变得非常大时，分区、分表能提高插入，查询的效率。
+
+###### 分区、分表的区别
+
+分表：将一张表分为多张表。需要**手动创建子表，应用程序在访问的时候也需要做调整**。还可以使用merge储存引擎。
+
+分区：按照某种规则将数据分段划分存放在多个位置（同一磁盘或不同机器，由数据库组织数据）。表现为**一张表**，应用程序**无需修改**。
+
+```sql
+create table `table_name` (
+  `id` int(11) not null auto_increment,
+  `name` varchar(50) character set utf8 collate utf8_general_ci null default null,
+  `money` float not null,
+  `tradeDate` datetime not null,
+  primary key (`id`)
+)
+
+partition by range (id)(
+    partition p1 values less than (1000),
+    partition p2 values less than (4000),
+    partition p3 values less than (maxvalues)
+);
+```
+
+更多参考：<http://mysql.taobao.org/monthly/2017/11/09/>
 
 ## 主从备份、读写分离
 
