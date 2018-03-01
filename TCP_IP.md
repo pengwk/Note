@@ -67,6 +67,7 @@ tcp
 - Reorder：重新排列（模拟是否按顺序排列）
 - Disconnect：断网 （模拟周期性的断开or链接网络）
 
+教程：http://blog.sina.com.cn/s/blog_13cc013b50102wa0g.html
 
 ## 服务器网络问题
 
