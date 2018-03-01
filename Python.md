@@ -13,6 +13,53 @@
 1. [ ] 参数的文档怎么写？
 1. [ ] 返回值呢？
 
+## 调试
+
+## 
+
+python -m pdb server.py 
+
+
+### gbd
+
+1. 安装GDB
+
+```bash
+sudo apt-get install gdb
+```
+
+2. 导入Python
+
+```
+file python
+```
+
+3. 运行脚本
+
+```
+run server.py
+```
+
+4. 退出
+
+```
+Quit
+```
+
+#### 分析coredump
+
+```
+gdb --core=core.12
+```
+
+#### 例子
+
+(gdb) file python
+Reading symbols from python...(no debugging symbols found)...done.
+(gdb) run server.py -p 7801
+Starting program: /usr/bin/python server.py -p 7801
+warning: Error disabling address space randomization: Operation not permitted
+During startup program terminated with signal SIGSEGV, Segmentation fault.
 
 
 ## 工作感悟
