@@ -1,4 +1,4 @@
-#　调试
+# 调试
 
 分析coredump文件
 
@@ -10,6 +10,8 @@ ulimit -c unlimited
 
 ## 工具
 
+https://wiki.python.org/moin/DebuggingWithGdb
+
 ### gdb
 
 where bt file run step b r  print
@@ -20,8 +22,10 @@ gdb -p 1000 (pid number)
 
 py-bt
 
+quit
 
-### 
+
+### 例子
 
 ```gdb
 root@localhost:~# gdb
@@ -154,4 +158,31 @@ Program received signal SIGSEGV, Segmentation fault.
 Quit
 (gdb) 
 
+```
+
+```
+(gdb) file python
+Reading symbols from python...Reading symbols from /usr/lib/debug/.build-id/66/b65551cc62504bf758e2f57514d33cf3017b8f.debug...done.
+done.
+f(gdb) run test.py
+Starting program: /usr/bin/python test.py
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+warning: Corrupted shared library list: 0xa369d0 != 0xa50dd0
+
+Program received signal SIGSEGV, Segmentation fault.
+0x000000000001956e in ?? ()
+(gdb) py-bt
+Traceback (most recent call first):
+  File "/usr/lib/python2.7/socket.py", line 53, in <module>
+    import _ssl
+  File "/usr/local/lib/python2.7/dist-packages/mysql/connector/network.py", line 33, in <module>
+    import socket
+  File "/usr/local/lib/python2.7/dist-packages/mysql/connector/connection.py", line 50, in <module>
+    from .network import MySQLUnixSocket, MySQLTCPSocket
+  File "/usr/local/lib/python2.7/dist-packages/mysql/connector/__init__.py", line 42, in <module>
+    from .connection import MySQLConnection
+  File "test.py", line 2, in <module>
+    import mysql.connector
+(gdb) 
 ```
