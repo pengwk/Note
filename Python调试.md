@@ -30,6 +30,10 @@ quit q
 
 https://stackoverflow.com/questions/29396600/segmentation-fault-core-dump-in-python-c-extension
 
+## 共享库
+
+root@localhost:~# nm -D /usr/lib/python2.7/lib-dynload/_ssl.x86_64-linux-gnu.so
+
 
 ### 例子
 
