@@ -14,6 +14,8 @@ https://wiki.python.org/moin/DebuggingWithGdb
 
 ### gdb
 
+info
+
 where bt file run step b r  print
 
 gdb -c core
@@ -22,7 +24,7 @@ gdb -p 1000 (pid number)
 
 py-bt
 
-quit
+quit q
 
 
 ### 例子
