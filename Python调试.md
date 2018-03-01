@@ -186,3 +186,12 @@ Traceback (most recent call first):
     import mysql.connector
 (gdb) 
 ```
+
+#### 关键信息
+
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+warning: Corrupted shared library list: 0xa369d0 != 0xa50dd0
+
+Program received signal SIGSEGV, Segmentation fault.
+
