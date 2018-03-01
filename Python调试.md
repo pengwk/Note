@@ -16,7 +16,7 @@ https://wiki.python.org/moin/DebuggingWithGdb
 
 info
 
-where bt file run step b r  print
+where bt file run step b r  print c display help
 
 gdb -c core
 
@@ -25,6 +25,10 @@ gdb -p 1000 (pid number)
 py-bt
 
 quit q
+
+## 教程
+
+https://stackoverflow.com/questions/29396600/segmentation-fault-core-dump-in-python-c-extension
 
 
 ### 例子
