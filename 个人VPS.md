@@ -22,6 +22,14 @@ sudo apt-get install zsh
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 ```
 
+配置pip自动补全
+
+```
+sudo pip completion --zsh >> ~/.zprofile
+source .zprofile
+```
+
+
 ## 系统管理
 
 ## 防火墙
