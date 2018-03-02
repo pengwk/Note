@@ -2,6 +2,12 @@
 
 分析coredump文件
 
+## Linux动态链接库 调试
+
+LD_DEBUG = [help, all]
+
+http://www.bnikolic.co.uk/blog/linux-ld-debug.html
+
 ## 开启
 
 ulimit -c 
