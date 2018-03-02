@@ -8,6 +8,30 @@ LD_DEBUG = [help, all]
 
 http://www.bnikolic.co.uk/blog/linux-ld-debug.html
 
+man dlopen
+
+lsof
+
+ldd
+
+### 系统信息
+
+locate
+
+find
+
+uname -a
+
+cat /proc/version
+
+root@localhost:~# lsb_release -a
+No LSB modules are available.
+Distributor ID:	Ubuntu
+Description:	Ubuntu 16.04.2 LTS
+Release:	16.04
+Codename:	xenial
+
+
 ## 开启
 
 ulimit -c 
@@ -31,6 +55,23 @@ gdb -p 1000 (pid number)
 py-bt
 
 quit q
+
+py-list
+
+backtrace -- Print backtrace of all stack frames
+bt -- Print backtrace of all stack frames
+down -- Select and print stack frame called by this one
+frame -- Select and print a stack frame
+py-bt -- Display the current python frame and all the frames within its call stack (if any)
+py-bt-full -- Display the current python frame and all the frames within its call stack (if any)
+py-down -- Select and print the python stack frame called by this one (if any)
+py-up -- Select and print the python stack frame that called this one (if any)
+return -- Make selected stack frame return to its caller
+select-frame -- Select a stack frame without printing anything
+up -- Select and print stack frame that called this one
+
+
+
 
 ## 教程
 
@@ -211,9 +252,27 @@ Traceback (most recent call first):
 
 #### 关键信息
 
+```
 [Thread debugging using libthread_db enabled]
 Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
 warning: Corrupted shared library list: 0xa369d0 != 0xa50dd0
 
 Program received signal SIGSEGV, Segmentation fault.
+
+```
+
+```
+(gdb) py-list
+  48    from _socket import *
+  49    from functools import partial
+  50    from types import MethodType
+  51    
+  52    try:
+ >53        import _ssl
+  54    except ImportError:
+  55        # no SSL support
+  56        pass
+  57    else:
+  58        def ssl(sock, keyfile=None, certfile=None):
+```
 
