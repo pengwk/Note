@@ -34,6 +34,12 @@ quit q
 
 ## 教程
 
+http://blog.jobbole.com/107759/
+
+https://zhuanlan.zhihu.com/p/28769268
+
+http://www.brendangregg.com/blog/2016-08-09/gdb-example-ncurses.html
+
 https://stackoverflow.com/questions/29396600/segmentation-fault-core-dump-in-python-c-extension
 
 ## 共享库
