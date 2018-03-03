@@ -70,7 +70,9 @@ return -- Make selected stack frame return to its caller
 select-frame -- Select a stack frame without printing anything
 up -- Select and print stack frame that called this one
 
+## 重新编译Python
 
+clone官方库
 
 
 ## 教程
