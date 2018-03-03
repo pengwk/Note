@@ -44,7 +44,52 @@ https://wiki.python.org/moin/DebuggingWithGdb
 
 ### gdb
 
-info
+#### 寄存器
+
+```
+(gdb) info registers 
+rax            0x9343c0	9651136
+rbx            0x7fda35f41be8	140575184788456
+rcx            0x0	0
+rdx            0x1a35f10	27483920
+rsi            0x7fda388d7b28	140575228394280
+rdi            0xffffffff	4294967295
+rbp            0x7fda35f3e910	0x7fda35f3e910
+rsp            0x7ffe5a8c1fb8	0x7ffe5a8c1fb8
+r8             0x19eb950	27179344
+r9             0x7100	28928
+r10            0x5	5
+r11            0x4	4
+r12            0x1a47330	27554608
+r13            0x0	0
+r14            0x1a4a760	27567968
+r15            0x0	0
+rip            0x1956e	0x1956e
+eflags         0x10206	[ PF IF RF ]
+cs             0x33	51
+ss             0x2b	43
+ds             0x0	0
+es             0x0	0
+fs             0x0	0
+gs             0x0	0
+
+```
+
+$rip 指令寄存器，指向当前执行的代码位置
+$rsp 栈指针寄存器，指向当前栈顶
+$rax，$rbx，$rcx，$rdx，$rsi，$rdi，$rbp，$r8，$r9，$r10，$r11，$r12，$r13，$r14，$r15 通用寄存器
+
+#### 常用命令
+
+info register
+info frame
+info args
+info locals
+
+watch
+
+set
+
 
 where bt file run step b r  print c display help
 
@@ -57,6 +102,7 @@ py-bt
 quit q
 
 py-list
+
 
 ```
 backtrace -- Print backtrace of all stack frames
