@@ -58,6 +58,7 @@ quit q
 
 py-list
 
+```
 backtrace -- Print backtrace of all stack frames
 bt -- Print backtrace of all stack frames
 down -- Select and print stack frame called by this one
@@ -69,6 +70,7 @@ py-up -- Select and print the python stack frame that called this one (if any)
 return -- Make selected stack frame return to its caller
 select-frame -- Select a stack frame without printing anything
 up -- Select and print stack frame that called this one
+```
 
 ## 重新编译Python
 
