@@ -125,13 +125,17 @@ clone官方库
 
 ## 教程
 
-http://blog.jobbole.com/107759/
+[gdb调试秘籍（寄存器、栈）](http://blog.csdn.net/linux_vae/article/details/79241278)
 
-https://zhuanlan.zhihu.com/p/28769268
+[GDB调试汇编堆栈过程分析](https://www.cnblogs.com/lxm20145215----/p/5982554.html)
 
-http://www.brendangregg.com/blog/2016-08-09/gdb-example-ncurses.html
+[gdb 调试入门，大牛写的高质量指南](http://blog.jobbole.com/107759/)
 
-https://stackoverflow.com/questions/29396600/segmentation-fault-core-dump-in-python-c-extension
+[gdb Debugging Full Example (Tutorial): ncurses](https://zhuanlan.zhihu.com/p/28769268)
+
+[gdb-example-ncurses](http://www.brendangregg.com/blog/2016-08-09/gdb-example-ncurses.html)
+
+[segmentation-fault-core-dump-in-python-c-extension](https://stackoverflow.com/questions/29396600/segmentation-fault-core-dump-in-python-c-extension)
 
 ## 共享库
 
