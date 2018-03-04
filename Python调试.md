@@ -66,6 +66,13 @@ ls -alh /var/log/
 
 [how-to-understand-php-errors-from-dmesg](https://stackoverflow.com/questions/39528592/how-to-understand-php-errors-from-dmesg)
 
+[LINUX 段错误查找记录](http://blog.csdn.net/senlin1202/article/details/51011129)
+
+[segfault at xxx rip xxx rsp xxx error 4（合并整理）](http://blog.csdn.net/senlin1202/article/details/51034384)
+
+[Cannot access memory at address error](https://stackoverflow.com/questions/5519824/cannot-access-memory-at-address-error)
+
+
 ```
 注：segfault时错误码：
 
