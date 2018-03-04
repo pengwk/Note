@@ -16,9 +16,13 @@ ldd
 
 ### 系统信息
 
+#### 文件查找
+
 locate
 
 find
+
+#### 操作系统信息
 
 uname -a
 
@@ -31,6 +35,13 @@ Description:	Ubuntu 16.04.2 LTS
 Release:	16.04
 Codename:	xenial
 
+#### 操作系统日志
+
+dmesg
+
+dmesg | less 
+
+ls -alh /var/log/
 
 ## 开启
 
@@ -302,6 +313,13 @@ Traceback (most recent call first):
   File "test.py", line 2, in <module>
     import mysql.connector
 (gdb) 
+```
+
+#### dmesg
+
+```
+[170609.968233] python[29162]: segfault at 1956e ip 000000000001956e sp 00007ffede95ff68 error 14 in python2.7[400000+2de000]
+[180972.937040] python[6980]: segfault at 1956e ip 000000000001956e sp 00007fffd602c3b8 error 14 in python2.7[400000+2de000]
 ```
 
 #### 关键信息
