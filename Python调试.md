@@ -14,6 +14,25 @@ lsof
 
 ldd
 
+### 查看需要加载的动态链接库
+
+```
+ldd `which python`
+```
+
+```
+root@localhost:~# ldd `which python`
+	linux-vdso.so.1 =>  (0x00007ffe08bb3000)
+	libpthread.so.0 => /lib/x86_64-linux-gnu/libpthread.so.0 (0x00007fe8f1f0d000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007fe8f1b43000)
+	libdl.so.2 => /lib/x86_64-linux-gnu/libdl.so.2 (0x00007fe8f193f000)
+	libutil.so.1 => /lib/x86_64-linux-gnu/libutil.so.1 (0x00007fe8f173c000)
+	libz.so.1 => /lib/x86_64-linux-gnu/libz.so.1 (0x00007fe8f1522000)
+	libm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007fe8f1219000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007fe8f212a000)
+
+```
+
 ### 系统信息
 
 #### 文件查找
