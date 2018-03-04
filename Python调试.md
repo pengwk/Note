@@ -66,6 +66,17 @@ ls -alh /var/log/
 
 [how-to-understand-php-errors-from-dmesg](https://stackoverflow.com/questions/39528592/how-to-understand-php-errors-from-dmesg)
 
+```
+注：segfault时错误码：
+
+error number是由5位组成的，从高到底分别为bit4,bit3,bit2 bit1和bit0,所以它的取值范围是0~31
+bit4: 0无意义，1表示取指令时出错
+bit3: 0无意义，1表示与页相关的数据结构保留位被修改
+bit2: 值为1表示是用户态程序内存访问越界，值为0表示是内核态程序内存访问越界
+bit1: 值为1表示是写操作导致内存访问越界，值为0表示是读操作导致内存访问越界
+bit0: 值为1表示没有足够的权限访问非法地址的内容，值为0表示访问的非法地址根本没有对应的页面，也就是无效地址
+```
+
 ## 开启
 
 ulimit -c 
@@ -338,6 +349,16 @@ Traceback (most recent call first):
     from .connection import MySQLConnection
   File "test.py", line 2, in <module>
     import mysql.connector
+(gdb) 
+```
+
+#### x/i
+
+```
+(gdb) x/i 0xa369d0
+   0xa369d0:	add    %dh,(%rax)
+(gdb) x/i 0xa50dd0
+   0xa50dd0:	add    %ah,0x7ffff541(%rax)
 (gdb) 
 ```
 
