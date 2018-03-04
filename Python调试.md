@@ -62,6 +62,10 @@ dmesg | less
 
 ls -alh /var/log/
 
+##### dmesg 分析
+
+[how-to-understand-php-errors-from-dmesg](https://stackoverflow.com/questions/39528592/how-to-understand-php-errors-from-dmesg)
+
 ## 开启
 
 ulimit -c 
@@ -108,6 +112,9 @@ gs             0x0	0
 $rip 指令寄存器，指向当前执行的代码位置
 $rsp 栈指针寄存器，指向当前栈顶
 $rax，$rbx，$rcx，$rdx，$rsi，$rdi，$rbp，$r8，$r9，$r10，$r11，$r12，$r13，$r14，$r15 通用寄存器
+
+堆栈帧
+heap stack frame
 
 #### 常用命令
 
