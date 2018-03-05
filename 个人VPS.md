@@ -36,6 +36,22 @@ source .zprofile
 
 ## 用户管理
 
+- useradd
+- usermod
+- userdel
+- passwd
+- groupadd
+- groupmod
+- groupdel
+
+### 创建用户
+
+
+
+### 修改密码
+
+`passwd`
+
 ## SSR
 
 使用Docker部署，用Supervisor来保证服务常驻。
