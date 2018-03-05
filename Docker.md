@@ -4,3 +4,7 @@
 
 `docker-compose up -d`
 
+
+### 启动容器
+
+`docker run -it -p 80:80 container_name`
