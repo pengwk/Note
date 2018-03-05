@@ -3,6 +3,9 @@
 ## 常用数据结构的Python实现
 
 - int
+
+http://python.jobbole.com/82632/
+
 - str
 - list
 - tuple
