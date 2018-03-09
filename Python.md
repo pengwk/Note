@@ -13,6 +13,15 @@ http://python.jobbole.com/82632/
 - set
 
 
+## 协程 
+
+http://blog.csdn.net/worisaa/article/details/63683102
+
+http://www.dabeaz.com/coroutines/
+
+http://www.dabeaz.com/coroutines/Coroutines.pdf
+
+
 ## 问题
 
 1. [ ] 语句和表达式的区别？为什么有这两个概念？他们分别是什么意思？
