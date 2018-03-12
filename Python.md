@@ -2,11 +2,11 @@
 
 ## 常用数据结构的Python实现
 
-- int
+- int 内存池 预先分配，申请使用
 
 http://python.jobbole.com/82632/
 
-- str
+- str 
 - list
 - tuple
 - dict
