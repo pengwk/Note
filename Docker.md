@@ -22,6 +22,10 @@
 - 数据文件 `-v /my/own/datadir:/var/lib/mysql`
 - 配置文件 
 
+查看本地MySQL的数据文件位置：
+
+`show global variables like '%datadir%';`
+
 将配置文件`mysql.cnf`放到`/my/custom/`目录下，`-v /my/custom/:/etc/mysql/conf.d`
 
 - 日志文件
