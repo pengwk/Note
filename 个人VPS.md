@@ -22,12 +22,20 @@ sudo apt-get install zsh
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 ```
 
-配置pip自动补全
+##### 配置pip自动补全
 
 ```
 sudo pip completion --zsh >> ~/.zprofile
 source .zprofile
 ```
+
+##### Docker Compose 自动补全
+
+https://docs.docker.com/compose/completion/#zsh
+
+```bash
+
+ ```
 
 
 ## 系统管理
