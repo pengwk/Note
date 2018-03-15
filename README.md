@@ -9,4 +9,6 @@
 
 - TDD
 - 测试驱动开发
+- 前端BFC、IFC
+- Python内存泄漏
 
