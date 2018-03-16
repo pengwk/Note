@@ -43,12 +43,16 @@
 
 `_.forIn`
 
-`-`是underscore对象。
+`-`可能是`underscore`绑定的变量，也可能是`lodash`绑定的变量。
+
+函数式编程
 
 #### 文档
 
-- [官方网站](http://underscorejs.org/)
-- [中文文档（bootcss提供）](http://www.bootcss.com/p/underscore/)
+- [udersocre官方网站](http://underscorejs.org/)
+- [udersocre中文文档（bootcss提供）](http://www.bootcss.com/p/underscore/)
+- [lodash document](https://www.lodashjs.com/docs)
+
 
 ## export default 是什么意思？
 
