@@ -13,6 +13,9 @@
 - [聊聊TCP中的KeepAlive机制](https://zhuanlan.zhihu.com/p/28894266)
 - [tcp的半连接与完全连接队列](https://segmentfault.com/a/1190000008224853)
 
+## TCP状态机
+
+![](./TCP状态转换图.png)
 
 ## 半连接
 
