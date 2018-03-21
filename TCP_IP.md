@@ -1,5 +1,25 @@
 # 工作中的TCP/IP
 
+## ？
+
+- 半连接
+- Keep alive 探针
+- linger
+
+## 参考
+
+- [酷壳：TCP的那些事（上）](https://coolshell.cn/articles/11564.html)
+- [酷壳：TCP的那些事（下）](https://coolshell.cn/articles/11609.html)
+- [聊聊TCP中的KeepAlive机制](https://zhuanlan.zhihu.com/p/28894266)
+
+
+## Keep alive
+
+1. KeepAlive默认情况下是关闭的，可以被上层应用开启和关闭
+2. tcp_keepalive_time: KeepAlive的空闲时长，或者说每次正常发送心跳的周期，默认值为7200s（2小时）
+3. tcp_keepalive_intvl: KeepAlive探测包的发送间隔，默认值为75s
+4. tcp_keepalive_probes: 在tcp_keepalive_time之后，没有接收到对方确认，继续发送保活探测包次数，默认值为9（次）
+
 
 ## 可靠性
 
