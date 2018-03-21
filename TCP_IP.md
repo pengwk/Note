@@ -11,9 +11,16 @@
 - [酷壳：TCP的那些事（上）](https://coolshell.cn/articles/11564.html)
 - [酷壳：TCP的那些事（下）](https://coolshell.cn/articles/11609.html)
 - [聊聊TCP中的KeepAlive机制](https://zhuanlan.zhihu.com/p/28894266)
+- [tcp的半连接与完全连接队列](https://segmentfault.com/a/1190000008224853)
+
+
+## 半连接
+
 
 
 ## Keep alive
+
+内核管理，只能检测这个TCP连接是否还在。
 
 1. KeepAlive默认情况下是关闭的，可以被上层应用开启和关闭
 2. tcp_keepalive_time: KeepAlive的空闲时长，或者说每次正常发送心跳的周期，默认值为7200s（2小时）
