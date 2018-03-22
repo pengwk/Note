@@ -24,6 +24,15 @@ http://python.jobbole.com/82632/
 - 在创建空字典或者很小的字典时，初始分配的储存区可容纳8个元素。
 - dict对象在负载因子超过2/3时自动更换更大的储存区，并把已经保存的内容重新散列到新的储存区。如果当前字典对象不太大，就按当时字典中的实际元素的4倍分配新储存区。当字典的元素超过50000（5万）时，改为按实际个数的2倍分配新储存区。
 
+## 垃圾回收
+
+
+#### 参考
+
+- [伯乐在线：Python 中的垃圾回收机制](http://python.jobbole.com/87843/?utm_source=blog.jobbole.com&utm_medium=relatedPosts)
+- []()
+- [Ruby 画说 Ruby 与 Python 垃圾回收](https://ruby-china.org/topics/28127)
+- [[转载]Python垃圾回收机制--完美讲解!](https://www.jianshu.com/p/1e375fb40506)
 
 ## 协程 
 
