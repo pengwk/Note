@@ -33,7 +33,7 @@
 ### 三种方式
 
 1. 引用计数 Reference Counting，无法处理循环引用
-2. 标记清除 Mark Sweep，基于追踪回收(tracing GC)的技术实现的垃圾回收算法
+2. 标记清除 Mark Sweep，基于追踪回收(tracing GC)的技术实现的垃圾回收算法.作用对象：**容器对象**
 3. 分代回收 Generational Garbage Collection，分代回收建立在**标记清除**基础上。 作用对象：**容器对象**。
 
 ### 内存泄漏
