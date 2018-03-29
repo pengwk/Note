@@ -26,11 +26,15 @@ http://python.jobbole.com/82632/
 
 ## 垃圾回收
 
-三种方式：
+三种方式的优缺点，相关API，可能会遇到的问题。
+
+### 三种方式
 
 1. 引用计数
 2. 分代回收
 3. 标记清除
+
+### API
 
 #### 参考
 
@@ -39,7 +43,30 @@ http://python.jobbole.com/82632/
 - [Ruby 画说 Ruby 与 Python 垃圾回收](https://ruby-china.org/topics/28127)
 - [[转载]Python垃圾回收机制--完美讲解!](https://www.jianshu.com/p/1e375fb40506)
 
+## 各种数据类型
+
+基本、高阶 原理，实现
+
+## 代码规范
+
+pep8、自动检查工具、实现原理
+
+## 装饰器
+
+## 运算符
+
+
+## 生成器
+
+原理、实现
+
+
+
 ## 协程 
+
+原理，事件循环event loop，python2.x, python3.x的的区别，新的语法，自己实现，
+
+#### 参考
 
 http://blog.csdn.net/worisaa/article/details/63683102
 
@@ -47,6 +74,13 @@ http://www.dabeaz.com/coroutines/
 
 http://www.dabeaz.com/coroutines/Coroutines.pdf
 
+## 线程
+
+线程、进程的区别与联系，相关API，如何转换，并发，thread_local, 线程安全，锁，线程间通信，
+
+## 进程
+
+## 
 
 ## 问题
 
