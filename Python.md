@@ -78,7 +78,7 @@ pep8、自动检查工具、实现原理
 
 #### 参考
 
-- [深入理解Python中协程的应用机制： 使用纯Python来实现一个操作系统吧！]http://blog.csdn.net/worisaa/article/details/63683102
+- [深入理解Python中协程的应用机制： 使用纯Python来实现一个操作系统吧！](http://blog.csdn.net/worisaa/article/details/63683102)
 - [A Curious Course on Coroutines and Concurrency](http://www.dabeaz.com/coroutines/)
 
 ## 线程
