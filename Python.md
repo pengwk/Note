@@ -87,7 +87,15 @@ pep8、自动检查工具、实现原理
 
 ## 进程
 
-## 
+#### 参考
+
+- []()
+
+## 源码分析
+
+#### 参考
+
+- [Python源码分析-PyDictObject](http://python.jobbole.com/86522/)
 
 ## 问题
 
@@ -212,4 +220,5 @@ TCP里传输的是JSON字符串，Tornado接收到后解析出错，日志显示
 
 - [Python之禅:刘志军](https://foofish.net/)
 - [胡阳](https://www.the5fire.com/)
+- [有哪些 Python 大牛的 blog 推荐？](https://www.zhihu.com/question/20474582)
 
