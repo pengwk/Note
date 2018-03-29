@@ -30,18 +30,25 @@ http://python.jobbole.com/82632/
 
 ### 三种方式
 
-1. 引用计数
-2. 分代回收
-3. 标记清除
+1. 引用计数 Reference Counting，无法处理循环引用
+2. 标记清除 Mark Sweep，基于追踪回收的技术实现的垃圾回收算法
+3. 分代回收 
 
-### API
+### 内存泄漏
+
+例子，调试，处理
+
+### 相关API
+
+`gc`模块,常用操作
 
 #### 参考
 
 - [伯乐在线：Python 中的垃圾回收机制](http://python.jobbole.com/87843/?utm_source=blog.jobbole.com&utm_medium=relatedPosts)
-- []()
+- [gc — Garbage Collector interface](https://docs.python.org/2/library/gc.html)
 - [Ruby 画说 Ruby 与 Python 垃圾回收](https://ruby-china.org/topics/28127)
 - [[转载]Python垃圾回收机制--完美讲解!](https://www.jianshu.com/p/1e375fb40506)
+- [gc – Garbage Collector](https://pymotw.com/2/gc/)
 
 ## 各种数据类型
 
