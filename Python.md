@@ -4,7 +4,7 @@
 
 - int 内存池 预先分配，申请使用
 
-http://python.jobbole.com/82632/
+[深入 Python 整数对象的实现](http://python.jobbole.com/82632/)
 
 - str
 
@@ -28,11 +28,13 @@ http://python.jobbole.com/82632/
 
 三种方式的优缺点，相关API，可能会遇到的问题。
 
+容器对象：list,dict,tuple,instance
+
 ### 三种方式
 
 1. 引用计数 Reference Counting，无法处理循环引用
-2. 标记清除 Mark Sweep，基于追踪回收的技术实现的垃圾回收算法
-3. 分代回收 
+2. 标记清除 Mark Sweep，基于追踪回收(tracing GC)的技术实现的垃圾回收算法
+3. 分代回收 Generational Garbage Collection，分代回收建立在**标记清除**基础上。 作用对象：**容器对象**。
 
 ### 内存泄漏
 
@@ -49,6 +51,7 @@ http://python.jobbole.com/82632/
 - [Ruby 画说 Ruby 与 Python 垃圾回收](https://ruby-china.org/topics/28127)
 - [[转载]Python垃圾回收机制--完美讲解!](https://www.jianshu.com/p/1e375fb40506)
 - [gc – Garbage Collector](https://pymotw.com/2/gc/)
+- [term-generational-garbage-collection](http://www.memorymanagement.org/glossary/g.html#term-generational-garbage-collection)
 
 ## 各种数据类型
 
@@ -75,11 +78,8 @@ pep8、自动检查工具、实现原理
 
 #### 参考
 
-http://blog.csdn.net/worisaa/article/details/63683102
-
-http://www.dabeaz.com/coroutines/
-
-http://www.dabeaz.com/coroutines/Coroutines.pdf
+- [深入理解Python中协程的应用机制： 使用纯Python来实现一个操作系统吧！]http://blog.csdn.net/worisaa/article/details/63683102
+- [A Curious Course on Coroutines and Concurrency](http://www.dabeaz.com/coroutines/)
 
 ## 线程
 
