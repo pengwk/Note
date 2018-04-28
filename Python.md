@@ -52,6 +52,7 @@
 - [[转载]Python垃圾回收机制--完美讲解!](https://www.jianshu.com/p/1e375fb40506)
 - [gc – Garbage Collector](https://pymotw.com/2/gc/)
 - [term-generational-garbage-collection](http://www.memorymanagement.org/glossary/g.html#term-generational-garbage-collection)
+- [使用gc、objgraph干掉python内存泄露与循环引用！](http://www.cnblogs.com/xybaby/p/7491656.html)
 
 ## 各种数据类型
 
@@ -182,6 +183,35 @@ During startup program terminated with signal SIGSEGV, Segmentation fault.
 
 - `type(object)` 返回继承链上最新的类型。
 - `isinstance(object, type_name)`继承链上任意一个类型都会返回`True`。
+
+
+### 快速查看项目代码
+
+相关软件包：
+
+- pyreverse
+- pylint
+- graphviz 
+
+
+#### pyreverse
+
+create UML diagrams for classes and modules in <packages>
+
+pyreverse -o png filename.py
+
+#### 安装graphviz
+
+brew install graphviz
+
+
+
+##### 参考
+
+- [python函数调用关系图（python call graph）](http://www.cnblogs.com/GO-NO-1/p/7155684.html)
+- [https://blog.csdn.net/u013920085/article/details/53285288](python的UML类图自动生成工具--pyreverse安装和使用)
+- [pycallgraph源码分析](https://www.zoulei.net/2016/07/22/pycallgraph_note/)
+- [PyCallGraph一览](http://knarfeh.com/2016/04/26/PyCallGraph%20%E4%B8%80%E8%A7%88/)
 
 #### Python代码
 
