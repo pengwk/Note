@@ -1,5 +1,11 @@
 ## Mac 系统
 
+### 截屏
+
+- shift + command + 4 按空格可以对窗口、菜单拍照，退出用ESC
+
+参考：[官方文档](https://support.apple.com/zh-cn/HT201361)
+
 ### brew
 
 #### 获取相关信息
