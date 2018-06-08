@@ -37,6 +37,7 @@ Options:
                         <projects>
   -S, --all-associated  show recursively all associated off all associated
                         classes
+                        递归的显示关联类的所有关联
   -b, --show-builtin    include builtin objects in representation of classes
   -m [yn], --module-names=[yn]
                         include module name in representation of classes
